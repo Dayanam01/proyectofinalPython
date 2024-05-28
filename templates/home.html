@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+{% if 'user' in session %}
+    <h1>Hola, {{ session['user'] }} estás en Home 🎞️!</h1>
+{% else %}
+    <h1>Bienvenido a Home 🎞️!</h1> 
+{% endif %}
+
+<img src="https://m.media-amazon.com/images/M/MV5BY2QwOGE2NGQtMWQwNi00M2IzLThlNWItYWMzNGQ5YWNiZDA4XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_.jpg">
+
+<img src="https://caracoltv.brightspotcdn.com/dims4/default/e09e926/2147483647/strip/false/crop/417x596+0+0/resize/1200x1715!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.us-west-2.amazonaws.com%2F20%2Fb6%2Fb742d9b14d15a7921fe887237090%2Falicia-en-el-pais-de-las-pesadillas.png">
+
+<img src="https://pics.filmaffinity.com/Garfield_La_pelaicula-199506866-large.jpg">
+
+{% endblock %}

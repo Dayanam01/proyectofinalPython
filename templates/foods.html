@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Foods{% endblock %}
+
+{% block content %}
+
+{% if 'user' in session %}
+    <h1>Hola, {{ session['user'] }} estás en Foods 🍿!</h1>
+{% else %}
+    <h1>Bienvenido a Foods 🍿!</h1> 
+{% endif %}
+
+<img src="https://scorecoorp.procinal.com/SCOREIMG/imgpel/test/1581.jpg">
+
+<img src="https://scorecoorp.procinal.com/SCOREIMG/imgpel/test/251.jpg">
+
+{% endblock %}

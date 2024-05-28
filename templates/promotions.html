@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Promotions{% endblock %}
+
+{% block content %}
+
+{% if 'user' in session %}
+    <h1>Hola, {{ session['user'] }} estás en Promotions 🏷️!</h1>
+{% else %}
+    <h1>Bienvenido a Promotions 🏷️!</h1> 
+{% endif %}
+
+<img src="https://www.procinal.com/uploads/DESCARGAS/BANNER%20-%20PROMOCIONES%20VIEJA%20WEB-02.jpg">
+
+<img src="https://www.infobae.com/new-resizer/Zd9TeXE7cdZSRydp9eLpG_fpcjs=/992x992/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/WD47GJFTGRH7XH4LCSQ4ZMPURA.jpg">
+
+      
+{% endblock %}

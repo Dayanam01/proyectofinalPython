@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Users{% endblock %}
+
+{% block content %}
+
+{% if 'user' in session %}
+    <h1>Hola, {{ session['user'] }} estás en Users 😊!</h1>
+{% else %}
+    <h1>Bienvenido a Users 😊!</h1> 
+{% endif %}
+
+{% endblock %}
